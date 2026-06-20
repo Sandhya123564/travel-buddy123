@@ -22,8 +22,17 @@ import {
 } from 'lucide-react';
 
 const languages = [
-  'English', 'Spanish', 'French', 'Germnpm startnese', 'Japanese', 
-  'Korean', 'Arabic', 'Hindi', 'Portuguese', 'Russian', 'Italian'
+  'English',
+  'Spanish',
+  'French',
+  'German',
+  'Japanese',
+  'Korean',
+  'Arabic',
+  'Hindi',
+  'Portuguese',
+  'Russian',
+  'Italian'
 ];
 
 export default function SearchBuddies() {
@@ -63,9 +72,10 @@ export default function SearchBuddies() {
     }
   };
 
-  useEffect(() => {
-    fetchBuddies();
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchBuddies();
+}, []);
 
   const handleSearch = (e) => {
     e.preventDefault();
