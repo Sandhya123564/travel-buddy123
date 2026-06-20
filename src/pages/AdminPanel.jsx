@@ -57,7 +57,7 @@ export default function AdminPanel() {
       return;
     }
     fetchData();
-  }, [user]);
+  }, [user]);// eslint-disable-next-line react-hooks/exhaustive-deps
 
   const fetchData = async () => {
     try {
